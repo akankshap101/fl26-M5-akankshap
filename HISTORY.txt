@@ -1,0 +1,56 @@
+﻿commit 4430ccd9a613754e075a6cda0aa5d59e3c06e5fd
+Author: akankshap101 <akankshap101@gmail.com>
+Date:   2026-11-23 19:23:34 -0500
+
+    Final code and video
+
+ .gitignore                                 |   6 +
+ CMakeLists.txt                             |  67 ++++
+ DESIGN.md                                  |  30 ++
+ DESIGN_NOTE.md                             |  35 ++
+ VIDEO.md                                   |   3 +
+ data/public/doc_ai.txt                     |   3 +
+ data/public/doc_retrieval.txt              |   3 +
+ data/public/doc_systems.txt                |   3 +
+ data/public/queries.txt                    |   4 +
+ include/aiws/chunker.hpp                   |  25 ++
+ include/aiws/chunking_strategy.hpp         |  18 +
+ include/aiws/context_builder.hpp           |  13 +
+ include/aiws/context_strategy.hpp          |  17 +
+ include/aiws/corpus_index.hpp              |  36 ++
+ include/aiws/document.hpp                  |  22 ++
+ include/aiws/gui/build_controller.hpp      |  62 ++++
+ include/aiws/gui/context_widget.hpp        |  75 ++++
+ include/aiws/gui/ipc_server.hpp            |  35 ++
+ include/aiws/gui/main_window.hpp           | 185 ++++++++++
+ include/aiws/gui/resettable.hpp            |  22 ++
+ include/aiws/gui/search_result_model.hpp   |  84 +++++
+ include/aiws/gui/search_widget.hpp         | 105 ++++++
+ include/aiws/gui/term_inspector_widget.hpp |  81 +++++
+ include/aiws/gui/workspace_widget.hpp      | 101 ++++++
+ include/aiws/processing_core.hpp           |  53 +++
+ include/aiws/processing_types.hpp          |  38 ++
+ include/aiws/retrieval_engine.hpp          |  18 +
+ include/aiws/retrieval_strategy.hpp        |  20 ++
+ include/aiws/text_processor.hpp            |  29 ++
+ include/aiws/workspace.hpp                 |  19 +
+ src/build_controller.cpp                   | 161 +++++++++
+ src/chunker.cpp                            |  56 +++
+ src/context_builder.cpp                    |  28 ++
+ src/context_widget.cpp                     |  88 +++++
+ src/corpus_index.cpp                       |  79 +++++
+ src/document.cpp                           |  14 +
+ src/ipc_server.cpp                         | 223 ++++++++++++
+ src/main.cpp                               |  42 +++
+ src/main_window.cpp                        | 416 ++++++++++++++++++++++
+ src/processing_core.cpp                    | 102 ++++++
+ src/retrieval_engine.cpp                   |  86 +++++
+ src/search_result_model.cpp                |  99 ++++++
+ src/search_widget.cpp                      | 142 ++++++++
+ src/term_inspector_widget.cpp              |  74 ++++
+ src/text_processor.cpp                     | 116 +++++++
+ src/workspace.cpp                          |  17 +
+ src/workspace_widget.cpp                   |  84 +++++
+ tests/student_tests.cpp                    | 540 +++++++++++++++++++++++++++++
+ tools/aiws_send.cpp                        | 164 +++++++++
+ 49 files changed, 3743 insertions(+)
